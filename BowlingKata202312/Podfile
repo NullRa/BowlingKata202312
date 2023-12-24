@@ -7,6 +7,9 @@ target 'BowlingKata202312' do
 
   # Pods for BowlingKata202312
 
+  pod 'RxSwift', '~> 6'
+  pod 'RxCocoa', '~> 6'
+
   target 'BowlingKata202312Tests' do
     inherit! :search_paths
     # Pods for testing

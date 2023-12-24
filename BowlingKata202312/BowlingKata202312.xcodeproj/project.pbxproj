@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3526852FA0E7BD0252A303CE /* Pods_BowlingKata202312.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D060BC36652DFF515483F6BE /* Pods_BowlingKata202312.framework */; };
+		AAD0EBCC83B7E45BD812108D /* Pods_BowlingKata202312Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F317BB0AF12798325D6EAF /* Pods_BowlingKata202312Tests.framework */; };
 		E00B17792B38505100801163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B17782B38505100801163 /* AppDelegate.swift */; };
 		E00B177B2B38505100801163 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B177A2B38505100801163 /* SceneDelegate.swift */; };
 		E00B177D2B38505100801163 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B177C2B38505100801163 /* ViewController.swift */; };
@@ -28,6 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		280A192BFB961D476AA6DC3E /* Pods-BowlingKata202312.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BowlingKata202312.release.xcconfig"; path = "Target Support Files/Pods-BowlingKata202312/Pods-BowlingKata202312.release.xcconfig"; sourceTree = "<group>"; };
+		3DB34479A684D23D5E4D7BCB /* Pods-BowlingKata202312.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BowlingKata202312.debug.xcconfig"; path = "Target Support Files/Pods-BowlingKata202312/Pods-BowlingKata202312.debug.xcconfig"; sourceTree = "<group>"; };
+		8716AA33A7806C3E93D1BAD6 /* Pods-BowlingKata202312Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BowlingKata202312Tests.release.xcconfig"; path = "Target Support Files/Pods-BowlingKata202312Tests/Pods-BowlingKata202312Tests.release.xcconfig"; sourceTree = "<group>"; };
+		93F317BB0AF12798325D6EAF /* Pods_BowlingKata202312Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BowlingKata202312Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D060BC36652DFF515483F6BE /* Pods_BowlingKata202312.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BowlingKata202312.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1B1C6C57CB88D27F3CF1BB8 /* Pods-BowlingKata202312Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BowlingKata202312Tests.debug.xcconfig"; path = "Target Support Files/Pods-BowlingKata202312Tests/Pods-BowlingKata202312Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E00B17752B38505100801163 /* BowlingKata202312.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BowlingKata202312.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E00B17782B38505100801163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E00B177A2B38505100801163 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3526852FA0E7BD0252A303CE /* Pods_BowlingKata202312.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,18 +62,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD0EBCC83B7E45BD812108D /* Pods_BowlingKata202312Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B5ADE2365B7080EC2535BC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D060BC36652DFF515483F6BE /* Pods_BowlingKata202312.framework */,
+				93F317BB0AF12798325D6EAF /* Pods_BowlingKata202312Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE9803866BA689E32F18490E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DB34479A684D23D5E4D7BCB /* Pods-BowlingKata202312.debug.xcconfig */,
+				280A192BFB961D476AA6DC3E /* Pods-BowlingKata202312.release.xcconfig */,
+				D1B1C6C57CB88D27F3CF1BB8 /* Pods-BowlingKata202312Tests.debug.xcconfig */,
+				8716AA33A7806C3E93D1BAD6 /* Pods-BowlingKata202312Tests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E00B176C2B38505100801163 = {
 			isa = PBXGroup;
 			children = (
 				E00B17772B38505100801163 /* BowlingKata202312 */,
 				E00B17962B3850B400801163 /* BowlingKata202312Tests */,
 				E00B17762B38505100801163 /* Products */,
+				DE9803866BA689E32F18490E /* Pods */,
+				8B5ADE2365B7080EC2535BC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E00B178C2B38505400801163 /* Build configuration list for PBXNativeTarget "BowlingKata202312" */;
 			buildPhases = (
+				C7B4DB8CF646B7E953650F03 /* [CP] Check Pods Manifest.lock */,
 				E00B17712B38505100801163 /* Sources */,
 				E00B17722B38505100801163 /* Frameworks */,
 				E00B17732B38505100801163 /* Resources */,
+				C9651CAC7CCCA6189E7B957A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +159,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E00B179B2B3850B400801163 /* Build configuration list for PBXNativeTarget "BowlingKata202312Tests" */;
 			buildPhases = (
+				3C251D2F880ED54F02130504 /* [CP] Check Pods Manifest.lock */,
 				E00B17912B3850B400801163 /* Sources */,
 				E00B17922B3850B400801163 /* Frameworks */,
 				E00B17932B3850B400801163 /* Resources */,
@@ -195,6 +231,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C251D2F880ED54F02130504 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BowlingKata202312Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7B4DB8CF646B7E953650F03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BowlingKata202312-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9651CAC7CCCA6189E7B957A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BowlingKata202312/Pods-BowlingKata202312-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BowlingKata202312/Pods-BowlingKata202312-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BowlingKata202312/Pods-BowlingKata202312-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E00B17712B38505100801163 /* Sources */ = {
@@ -362,6 +462,7 @@
 		};
 		E00B178D2B38505400801163 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DB34479A684D23D5E4D7BCB /* Pods-BowlingKata202312.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -390,6 +491,7 @@
 		};
 		E00B178E2B38505400801163 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 280A192BFB961D476AA6DC3E /* Pods-BowlingKata202312.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -418,6 +520,7 @@
 		};
 		E00B179C2B3850B400801163 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1B1C6C57CB88D27F3CF1BB8 /* Pods-BowlingKata202312Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -436,6 +539,7 @@
 		};
 		E00B179D2B3850B400801163 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8716AA33A7806C3E93D1BAD6 /* Pods-BowlingKata202312Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
